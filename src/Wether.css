@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 92.5%;
+}
+body{
+    
+    /* background-image: url("https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background-image: url('https://images.pexels.com/photos/2097628/pexels-photo-2097628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* height: 150vh; */
+    background-size: cover;
+}
+
+.container{
+    /* background-position:center; */
+    width:  50%;
+    height: 100vh;
+    /* background-color: aqua; */
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-around; */
+    display: grid;
+    grid-template-rows: 10rem 1fr  1rem 2fr 10rem;
+    margin-top:0px;
+    opacity: 0.9;
+}
+.search-bar{
+    width: 100%;
+    height: 7rem;
+    margin-top: 5rem;
+    background-color: rgb(248, 156, 8);
+   
+    display: grid;
+    grid-template-columns: 5rem 2fr  1rem 0.5fr 5rem;
+    grid-row: 2/3;
+    opacity: 0.7;
+}
+.search-bar input{
+    display: grid;
+    
+    height: 4rem;
+    margin-top: 1.5rem;
+    /* background-color: #3b5998; */
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: flex-end;
+    /* text-decoration: none; */
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    text-align: center;
+}
+.search-bar button{
+    display: grid;
+    
+    height: 4rem;
+    margin-top: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    grid-column: 4/5;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar button:hover{
+    background-color: palegoldenrod;
+}
+.search-icon{
+    font-size: 2.5rem;
+    /* color: #fff; */
+}
+.wether-format{
+    display: grid;
+    grid-row: 4/5;
+    height: 50vh;
+    margin-top: 5rem;
+    /* background-color:    #7EB2DD; */
+    background-color:    #fff;
+
+    opacity: 0.6;
+    /* background-color: rgb(103, 72, 243); */
+    color: #111;
+    /* align-items: flex-start; */
+    justify-content: center;
+}
+.wether-format h1{
+    margin-top:1rem ;
+    text-align: center;
+}
+.weather-template{
+    width: 50rem;
+    height: 40vh;
+    /* background-color: orangered; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+ .wether-date{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    
+}
+.wether-date h3{
+    font-size: 2rem;
+}
+ .wether-date h3:nth-child(2){
+   margin-left: 20rem;
+
+}
+.temp{
+
+    display: flex;
+    align-items: center;
+    /*
+    justify-content: space-around; */
+}
+.temp .temp-with-icon{
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    font-size: 4rem;
+    /* padding-right: 5rem; */
+    border-right: 1px solid gray;
+}
+.temp .temp-logo{
+    /* text-align: center; */
+    width: 25rem;
+    display: flex;
+    /* color: rgb(90, 214, 252); */
+    font-size: 2rem;
+    padding-left: 7rem;
+    /* margin-left: 5rem; */
+}
+.wether-icon{
+    color: rgb(90, 214, 252);
+    font-size: 5rem;
+
+}
+.temp-with-icon .wether-icon{
+    color: #111;
+    font-size: 7rem;
+}
+.temp-minMax{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.temp-minMax .temp-min{
+    font-size: 1.5rem;
+    display: flex;
+    width: 25rem;
+    /* left: 0; */
+    /* text-align: start; */
+    /* margin-right: 10rem; */
+    padding-left: 5rem;
+    /* background-color: hotpink; */
+}
+.temp-minMax .temp-max{
+    font-size: 1.5rem;
+    display: flex;
+    width: 25rem;
+    padding-left: 5rem;
+    /* margin-left: 5rem; */
+    /* background-color: indigo; */
+}
+.wether-icons{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+
+@media (max-width:998px) {
+.container{
+    width: 100%;
+} 
+}
+@media (max-width: 798px){
+    .container{
+        width: 100%;
+        margin-left: 30px;
+    } 
+    .search-bar{
+        width: 90%;
+    
+    }
+    .wether-format{
+        width: 90%;
+    }
+}
+@media (max-width: 520px){
+    .container{
+        width: 100%;
+    } 
+
+}
